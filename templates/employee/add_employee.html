@@ -1,0 +1,13 @@
+<html>
+<body>
+<form action="{% url 'add_employee' %}" method="POST">
+    {% csrf_token %}
+    First Name <input type="text" name="first_name" /></br>
+    Middle Name <input type="text" name="middle_name" /></br>
+    Last Name <input type="text" name="last_name" /></br>
+    Salary <input type="text" name="salary" /></br>
+    Age <input type="text" name="age" /></br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
